@@ -192,7 +192,7 @@ qos_profile = QoSProfile(
 ---
 
 ## 라이선스
-사내/프로젝트 정책을 따릅니다. 필요 시 라이선스를 명시하세요.
+@MinwooCha
 
 ---
 
