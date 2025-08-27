@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROS2 Realtime PointCloud Viewer</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico"> <!--로고는 최강 두산으로 갈게 ~^-->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #111;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    #info-panel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #eee;
+      border-radius: 8px;
+      font-size: 14px;
+      z-index: 100;
+    }
+    #info-panel h2 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      color: #90caf9;
+    }
+    #no-obstacle {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px 14px;
+      background: rgba(255, 0, 0, 0.7);
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <div id="info-panel">
+    <h2>🔍 PointCloud Viewer</h2>
+    <div id="connection-status">🟡 Connecting...</div>
+  </div>
+
+  <div id="no-obstacle">🚫 장애물 없음</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
